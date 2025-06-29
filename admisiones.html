@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Colegio Bella Vista</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="./Imagenes/logosinfondo.png" sizes="32x32">
+  <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/admisiones.css">
+</head>
+
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <a href="index.html" class="logo">Colegio Bella Vista</a>
+      <ul class="menu">
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="instalaciones.html">Instalaciones</a></li>
+        <li><a href="admisiones.html">Admisiones</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <h1>ADMISIONES</h1>
+    </div>
+  </header>
+
+  <section class="requisitos">
+    <div class="general">
+      <h2>Requisitos de admisión</h2>
+      <ul>
+        <li> Certificado de nacimiento del RENAP (reciente).</li>
+        <li> Constancia de salud y fotocopia de carné de vacunas.</li>
+        <li> 1 fotografía tamaño cédula.</li>
+        <li> Certificado de grados aprobados.</li>
+        <li> Fotocopia de boletín de notas.</li>
+        <li> Certificado de buen comportamiento.</li>
+        <li> Código del MINEDUC.</li>
+        <li> Carta de solvencia de pagos.</li>
+        <li> DPI de ambos padres</li>
+      </ul>
+    </div>
+    <div class="general-1"></div>
+  </section>
+
+  <section class="requisitos-2">
+    <div class="general-2"></div>
+    <div class="general-doc">
+      <h2>Documentos Administrativos</h2>
+      <ul>
+        <li> Contrato de adhesión (dada por el colegio).</li>
+        <li> Carta de convenio (dada por el colegio).</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="uf-contact-form-02 mx-auto">
+    <div class="container">
+      <div
+        class="row justify-content-center align-items-center bg-white py-5 gx-5 px-lg-5 uf-contact-form-02-body my-4">
+        <div class="col-md-6">
+          <h2 class="text-uppercase fw-bold">Contactanos</h2>
+          <p>O escribenos al correo: <a href="mailto:socialmediacolegiobellavista@gmail.com"
+              class="text-decoration-none uf-ct-02-text-primary">socialmediacolegiobellavista@gmail.com</a></p>
+          <!-- Formulario -->
+          <form id="contactForm">
+            <div class="mb-3">
+              <label for="uf-imail" class="form-label">Correo Electrónico</label>
+              <input type="email" name="Correo" class="form-control" id="uf-imail" required>
+            </div>
+            <div class="mb-3">
+              <label for="uf-iname" class="form-label">Nombre</label>
+              <input type="text" name="Nombre" class="form-control" id="uf-iname" required>
+            </div>
+            <div class="mb-3">
+              <label for="uf-itextarea" class="form-label">Comentarios</label>
+              <textarea name="Comentarios" class="form-control" id="uf-itextarea" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-lg uf-ct-02-btn-primary text-uppercase w-100">Contactar</button>
+          </form>
+          <!-- Mensaje de éxito -->
+          <div id="successMessage" style="display:none; margin-top: 15px;" class="alert alert-success">
+            ¡Gracias! Tu mensaje ha sido enviado con éxito pronto se comunicarán contigo.
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="/Imagenes/supports.png" alt="" class="uf-img-contact-form-02 pt-4 d-md-block d-none">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-seccion">
+        <h5 style="color: #ccc;">Contacto</h4>
+          <p style="font-size: medium; color: #ccc;">socialmediacolegiobellavista@gmail.com</p>
+          <p style="font-size: medium; color: #ccc;">8va. Avenida 13-49 Zona 4</p>
+          <p style="font-size: medium; color: #ccc;">San José Pinula, Guatemala</p>
+      </div>
+      <div class="footer-seccion">
+        <h5 style="color: #ccc;">Enlaces rápidos</h4>
+          <ul>
+            <li><a href="nosotros.html" style="color: #ccc;">Nosotros</a></li>
+            <li><a href="instalaciones.html" style="color: #ccc;">Instalaciones</a></li>
+            <li><a href="admisiones.html" style="color: #ccc;">Admisiones</a></li>
+          </ul>
+      </div>
+      <div class="footer-seccion">
+        <h5 style="color: #ccc;">Síguenos</h4>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/share/1JQ69k9MN4/" class="icon">FB</a>
+            <a href="https://www.tiktok.com/@colegiobellavistagt?_t=ZM-8xbER5Kw7UL&_r=1" class="icon">TT</a>
+            <a href="https://www.instagram.com/colegiobellavistagt?igsh=MWdtOWx6d3hjcngxMA==" class="icon">IG</a>
+          </div>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; 2025 Colegio Bella Vista. Todos los derechos reservados.</p>
+  </footer>
+</body>
+
+</html>
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+<!-- Script -->
+<script>
+  const form = document.getElementById('contactForm');
+  const successMessage = document.getElementById('successMessage');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    fetch("https://formsubmit.co/ajax/socialmediacolegiobellavista@gmail.com", {
+      method: "POST",
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+      .then(response => {
+        if (response.ok) {
+          form.reset(); 
+          successMessage.style.display = 'block'; 
+        } else {
+          alert("Ocurrió un error al enviar el formulario.");
+        }
+      })
+      .catch(error => {
+        alert("Error de conexión. Inténtalo más tarde.");
+      });
+  });
+</script>
