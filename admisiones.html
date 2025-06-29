@@ -67,15 +67,15 @@
           <form id="contactForm">
             <div class="mb-3">
               <label for="uf-imail" class="form-label">Correo Electrónico</label>
-              <input type="email" name="Correo" class="form-control" id="uf-imail" required>
+              <input type="email" name="email" class="form-control" id="uf-imail" required>
             </div>
             <div class="mb-3">
               <label for="uf-iname" class="form-label">Nombre</label>
-              <input type="text" name="Nombre" class="form-control" id="uf-iname" required>
+              <input type="text" name="name" class="form-control" id="uf-iname" required>
             </div>
             <div class="mb-3">
               <label for="uf-itextarea" class="form-label">Comentarios</label>
-              <textarea name="Comentarios" class="form-control" id="uf-itextarea" rows="3" required></textarea>
+              <textarea name="message" class="form-control" id="uf-itextarea" rows="3" required></textarea>
             </div>
             <button type="submit" class="btn btn-lg uf-ct-02-btn-primary text-uppercase w-100">Contactar</button>
           </form>
@@ -132,7 +132,7 @@
 
     const formData = new FormData(form);
 
-    fetch("https://formsubmit.co/ajax/socialmediacolegiobellavista@gmail.com", {
+    fetch("https://formsubmit.co/ajax/d485d90245ef9731c4ebc4d2d59a83f7", {
       method: "POST",
       body: formData,
       headers: {
@@ -141,8 +141,8 @@
     })
       .then(response => {
         if (response.ok) {
-          form.reset(); 
-          successMessage.style.display = 'block'; 
+          form.reset();
+          successMessage.style.display = 'block';
         } else {
           alert("Ocurrió un error al enviar el formulario.");
         }
